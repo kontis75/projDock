@@ -1,5 +1,5 @@
 FROM devopsedu/webapp 
 CMD apachectl -D FOREGROUND
-COPY /var/www/code2/website/. /var/www/html/.
+ADD https://github.com/edureka-devops/projCert.git /var/www/html/.
 RUN rm /var/www/html/index.html
 
