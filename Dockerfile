@@ -1,5 +1,5 @@
 FROM devopsedu/webapp 
-COPY  /var/www/code2/website/. /var/www/html/.
+ADD /var/www/html/. /var/www/html/.
 RUN rm /var/www/html/index.html
 CMD apachectl -D FOREGROUND
 
