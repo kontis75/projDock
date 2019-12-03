@@ -1,6 +1,5 @@
 FROM devopsedu/webapp 
-WORKDIR /var/www/code2/website
-COPY  . /var/www/html/.
+COPY  /var/www/code2/* /var/www/html/.
 RUN rm /var/www/html/index.html
 CMD apachectl -D FOREGROUND
 
